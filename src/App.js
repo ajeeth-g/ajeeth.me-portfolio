@@ -1,14 +1,61 @@
-import React from 'react'
-import Navbar from './components/Navbar';
+import React, { useState } from "react";
+import { Container } from "@mui/system";
+import About from "./components/About/About";
+import Navbar from "./components/Navbar/Navbar";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Box } from "@mui/material";
+import Work from "./components/Work/Work";
+import Footer from "./components/Footer/Footer";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { blue } from "@mui/material/colors";
 
+const App = () => {
+  const [theme, settheme] = useState("dark");
 
-function App() {
+  const darkTheme = createTheme({
+    palette: {
+      mood: theme,
+      background: {
+        default: "#F6F7F2",
+      },
+      secondary: {
+        main: "#4F5358",
+      },
+    },
+
+    typography: {
+      fontFamily: "Jura",
+      fontWeightLight: 400,
+      fontWeightMedium: 500,
+      fontWeightRegular: 700,
+      fontWeightBold: 700,
+      subtitle1: {
+        fontSize: 15,
+      },
+      h6: {
+        fontSize: "1rem",
+        fontWeight: 700,
+      },
+    },
+  });
 
   return (
-   <>
-   <Navbar/>
-   </>
+    <ThemeProvider theme={darkTheme}>
+      <Box bgcolor={"background.default"} color={"text.primary"}>
+        <Container
+          component="Container"
+          sx={{
+            border: "2px solid red",
+          }}
+        >
+          <Navbar />
+          <About />
+          <Work />
+          <Footer />
+        </Container>
+      </Box>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
