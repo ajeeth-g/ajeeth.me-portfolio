@@ -16,7 +16,8 @@ const About = () => {
         justifyContent: "center",
         width: "860px",
         margin: "40px auto 0",
-        border: "2px solid red",
+        border: "4px solid black",
+        flexWrap: "wrap",
       }}
     >
       <Box sx={{ border: "2px solid red", width: "685px" }}>
@@ -28,24 +29,36 @@ const About = () => {
           Currently working at VVDN Technologies as a componentgineer, helping
           to design the electrical board (PCB).
         </Typography>
-        <Typography color = "secondary" component="p" gutterBottom={true}>
+        <Typography color="secondary" component="p" gutterBottom={true}>
           I’m an PCB designer with over 2 years of experience in designing a
           printed circuit board. I'm an innovative and dedicated design
           professional dedicated to satisfying my customer’s design
           requirements. I enjoy the challenge of finding unique ways to fulfill
           my customer’s needs.
         </Typography>
-        <Typography  variant="h6" component="p">Let’s talk me on hello@ajeeth.me</Typography>
+        <Typography variant="h6" component="p">
+          Let’s talk me on hello@ajeeth.me
+        </Typography>
       </Box>
       <Box
         sx={{
-          border: "2px solid red",
+          border: "6px solid blue ",
           width: "860px",
           display: "flex",
           flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 4,
         }}
       >
-        <Box sx={{ border: "2px solid red", width: "417px" }}>
+        <Box
+          sx={{
+            border: "2px dotted red",
+            width: "415px",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+          }}
+        >
           <Typography gutterBottom={true}>
             I am a mechanical engineer by profession, but I have always had a
             passion for coding. As such, I have decided to switch my career path
@@ -55,19 +68,20 @@ const About = () => {
             I have been teaching myself coding and have gained a good amount of
             knowledge in HTML, CSS, JavaScript, Bootstrap and React.
           </Typography>
-          <ImageListItem sx={{ width: 417 }}>
+          <ImageListItem sx={{ width: 415 }}>
             <img src={Profile_1} alt="" />
           </ImageListItem>
         </Box>
         <Box
           sx={{
-            border: "2px solid red",
+            border: "2px dotted red",
             display: "flex",
-            flexDirection: "column",
-            width: "417px",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            width: "400px",
           }}
         >
-          <ImageListItem sx={{ width: 417 }}>
+          <ImageListItem sx={{ width: 415 }}>
             <img src={Profile} alt="" />
           </ImageListItem>
           <Typography>

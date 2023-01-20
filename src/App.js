@@ -45,7 +45,8 @@ const App = () => {
         <Container
           component="Container"
           sx={{
-            border: "2px solid red",
+            border: "2px dotted blue",
+            flexWrap: "wrap"
           }}
         >
           <Navbar />
