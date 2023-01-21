@@ -62,7 +62,7 @@ const App = () => {
         bgcolor={"background.default"}
         color={"text.primary"}
       >
-        <Container component="Container">
+        <Container component="container">
           <Box className="App">
             <Widget
               handleNewUserMessage={handleNewUserMessage}
