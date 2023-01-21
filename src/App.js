@@ -63,14 +63,14 @@ const App = () => {
         color={"text.primary"}
       >
         <Container component="Container">
-          <div className="App">
+          <Box className="App">
             <Widget
               handleNewUserMessage={handleNewUserMessage}
               profileAvatar={logo}
               title="Chat me"
               subtitle="Ask whatever you think"
             />
-          </div>
+          </Box>
           <Navbar />
           <About />
           <Work />
