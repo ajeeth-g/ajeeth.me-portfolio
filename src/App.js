@@ -7,7 +7,6 @@ import { Box } from "@mui/material";
 import Work from "./components/Work/Work";
 import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
-import { blue } from "@mui/material/colors";
 
 const App = () => {
   const [theme, settheme] = useState("dark");
@@ -41,14 +40,17 @@ const App = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Container
-          component="Container"
-          sx={{
-            border: "2px dotted blue",
-            flexWrap: "wrap"
-          }}
-        >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          // border: "4px dashed  blue",
+          flexWrap: "wrap",
+        }}
+        bgcolor={"background.default"}
+        color={"text.primary"}
+      >
+        <Container component="Container">
           <Navbar />
           <About />
           <Work />
