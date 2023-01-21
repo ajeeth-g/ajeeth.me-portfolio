@@ -54,8 +54,8 @@ const App = () => {
           <Navbar />
           <About />
           <Work />
-          <Footer />
         </Container>
+        <Footer />
       </Box>
     </ThemeProvider>
   );

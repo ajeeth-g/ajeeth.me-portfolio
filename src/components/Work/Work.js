@@ -9,12 +9,14 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import { Link } from "react-scroll";
 
 const Work = () => {
   return (
     <Box
+      className="work"
       sx={{
-        border: "2px solid green",
+        // border: "2px solid green",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -28,14 +30,15 @@ const Work = () => {
           justifyContent: "center",
           alignItems: "center",
           width: 500,
-          border: "2px solid red",
+          marginBottom: "50px",
+          // border: "2px solid red",
         }}
       >
-        <Typography mb={4}>
+        <Typography sx={{ fontSize: "22px" }} mb={4}>
           Digital product designer who can work with code, currently building
           tools for myself
         </Typography>
-        <Typography>
+        <Typography sx={{ fontSize: "18px", color: "#4F5358" }}>
           I craft strategy-based products by asking the right questions and
           understanding the problem. I strive in achieving a positive impact on
           any company or product I am working on.
@@ -48,13 +51,17 @@ const Work = () => {
           width: 860,
           alignItems: "flex-end",
           columnGap: 5,
-          border: "2px solid blue",
+          // border: "2px solid blue",
         }}
       >
-        <IconButton>
-          <Typography>View my work </Typography>
-          <SouthIcon />
-        </IconButton>
+        <Link to="work" smooth={true} duration={500}>
+          <IconButton>
+            <Typography fontSize="20px" color="#000">
+              View my work{" "}
+            </Typography>
+            <SouthIcon />
+          </IconButton>
+        </Link>
 
         <Box
           sx={{
@@ -63,14 +70,17 @@ const Work = () => {
             justifyContent: "center",
             width: 860,
             columnGap: 5,
-            border: "2px solid brown",
+            marginTop: "100px",
+            // border: "2px solid brown",
           }}
         >
           <Box>
             <Card
               sx={{
                 width: 400,
-                border: "2px dotted red",
+                backgroundColor: "#F6F7F2",
+                borderRadius: "20px",
+                // border: "2px dotted red",
               }}
             >
               <CardHeader
@@ -84,6 +94,9 @@ const Work = () => {
                 }
               />
               <CardMedia
+                sx={{
+                  padding: "20px",
+                }}
                 component="img"
                 height="657"
                 image={work}
@@ -95,7 +108,8 @@ const Work = () => {
             <Card
               sx={{
                 width: 400,
-                border: "2px dotted red",
+                backgroundColor: "#F6F7F2",
+                // border: "2px dotted red",
                 marginTop: "100px",
               }}
             >
@@ -106,10 +120,13 @@ const Work = () => {
                   </Typography>
                 }
                 subheader={
-                  <Typography variant="h5">My personal portfolio</Typography>
+                  <Typography variant="h5">Upcoming Project</Typography>
                 }
               />
               <CardMedia
+                sx={{
+                  padding: "20px",
+                }}
                 component="img"
                 height="657"
                 image={work}
@@ -124,7 +141,9 @@ const Work = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          border: "2px dotted red",
+          background: "rgba(217, 217, 217, 0.5)",
+          marginTop: "80px",
+          // border: "2px dotted red",
           height: 543,
           width: "100%",
         }}
@@ -132,9 +151,10 @@ const Work = () => {
         <Box
           sx={{
             display: "flex",
-            border: "2px dotted green",
+            // border: "2px dotted green",
             width: 943,
             height: "max-content",
+
             gap: 20,
           }}
         >
@@ -142,27 +162,29 @@ const Work = () => {
             <Typography
               sx={{
                 width: "max-content",
+                fontSize: "35px",
               }}
             >
               How I Work
             </Typography>
           </Box>
           <Box>
-            <Typography>
-              Briefing Understanding the problem has always been the forefront
-              of my process. I consider project briefing as the most important
-              stage as erroneous understanding can lead to misguided designs.
+            <Typography sx={{ marginBottom: "30px", fontWeight: "400" }}>
+              <b>Briefing</b> Understanding the problem has always been the
+              forefront of my process. I consider project briefing as the most
+              important stage as erroneous understanding can lead to misguided
+              designs.
             </Typography>
-            <Typography>
-              Strategy Clients come in different takes; some say they know what
-              they want, and some might have no idea. Whatever their take may
-              be, I always ask for their objective, and dive deep to understand
-              what can solve their problem.
+            <Typography sx={{ marginBottom: "30px", fontWeight: "400" }}>
+              <b>Strategy</b> Clients come in different takes; some say they
+              know what they want, and some might have no idea. Whatever their
+              take may be, I always ask for their objective, and dive deep to
+              understand what can solve their problem.
             </Typography>
-            <Typography>
-              Design → Review → Iteration Most of the time, I dive straight to
-              doing wireframes in Figma or Sketch. From wireframes to
-              high-fidelity designs, I take client engagement in high regard.
+            <Typography sx={{ fontWeight: "400" }}>
+              <b>Design → Review → Iteration</b> Most of the time, I dive
+              straight to doing wireframes in Figma or Sketch. From wireframes
+              to high-fidelity designs, I take client engagement in high regard.
               Reviews and feedback make part in the success of the project.
               Necessary iterations can take place until we achieve the desired
               solution.

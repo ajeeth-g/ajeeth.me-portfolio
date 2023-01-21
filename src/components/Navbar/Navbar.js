@@ -4,7 +4,11 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const OwnTypography = ({ children }) => {
-    return <Typography style={{ fontSize: "20px" }}>{children}</Typography>;
+    return (
+      <Typography style={{ fontSize: "20px", cursor: "pointer " }}>
+        {children}
+      </Typography>
+    );
   };
   return (
     <Box
@@ -20,7 +24,7 @@ const Navbar = () => {
       }}
     >
       <Box>
-        <Link to="about">
+        <Link to="about" smooth={true} duration={500}>
           <OwnTypography>ajeeth.me</OwnTypography>
         </Link>
       </Box>
@@ -31,10 +35,10 @@ const Navbar = () => {
           justifyContent: "flex-end",
         }}
       >
-        <Link>
+        <Link to="about" smooth={true} duration={500}>
           <OwnTypography>About</OwnTypography>
         </Link>
-        <Link>
+        <Link to="work" smooth={true} duration={500}>
           <Badge sx={{ marginLeft: "50px" }} badgeContent={1}>
             <OwnTypography>Work</OwnTypography>
           </Badge>
