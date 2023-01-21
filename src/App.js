@@ -8,7 +8,9 @@ import Work from "./components/Work/Work";
 import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 
+
 const App = () => {
+
   const [theme, settheme] = useState("dark");
 
   const darkTheme = createTheme({
