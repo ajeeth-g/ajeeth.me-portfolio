@@ -11,7 +11,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { amber } from "@mui/material/colors";
 
 const App = () => {
-  const [theme, settheme] = useState("dark");
+  const [theme, settheme] = useState("light");
 
   const darkTheme = createTheme({
     palette: {
