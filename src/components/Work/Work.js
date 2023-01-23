@@ -121,7 +121,7 @@ const Work = () => {
                 "&:hover": {
                   boxShadow: (theme) => theme.shadows[4],
                 },
-              }}
+               }}
             >
               <CardHeader
                 title={
