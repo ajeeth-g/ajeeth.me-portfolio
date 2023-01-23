@@ -80,11 +80,12 @@ const Work = () => {
             <Card
               sx={{
                 width: 400,
-                background: "background.defult",
+                background: "background.default",
                 borderRadius: "20px",
-                color: "text.secondary",
-
-                // border: "2px dotted red",
+                color: "text.primary",
+                "&:hover": {
+                  boxShadow: (theme) => theme.shadows[4],
+                },
               }}
             >
               <CardHeader
@@ -113,11 +114,13 @@ const Work = () => {
             <Card
               sx={{
                 width: 400,
-                backgroundColor: "#F6F7F2",
+                background: "background.default",
                 borderRadius: "20px",
-                // border: "2px dotted red",
+                color: "text.primary",
                 marginTop: "100px",
-                color: "text.secondary",
+                "&:hover": {
+                  boxShadow: (theme) => theme.shadows[4],
+                },
               }}
             >
               <CardHeader
