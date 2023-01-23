@@ -1,4 +1,3 @@
-import MessengerCustomerChat from "react-messenger-customer-chat";
 import logo from "./assets/Profile.JPG";
 import React, { useEffect, useState } from "react";
 import { Container } from "@mui/system";
@@ -72,7 +71,6 @@ const App = () => {
       >
         <Paper>
           <Container component="container">
-            <MessengerCustomerChat pageId="884562478402337" appId="<APP_ID>" />
             <Navbar settheme={settheme} />
             <About />
             <Work />
