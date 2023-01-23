@@ -1,8 +1,8 @@
-import { Badge, Box, Typography } from "@mui/material";
+import { Badge, Box, Switch, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ settheme }) => {
   const OwnTypography = ({ children }) => {
     return (
       <Typography style={{ fontSize: "20px", cursor: "pointer " }}>
@@ -10,6 +10,11 @@ const Navbar = () => {
       </Typography>
     );
   };
+
+  const handleSwitchChange = () => {
+   settheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
+
   return (
     <Box
       color="primary"
@@ -38,11 +43,12 @@ const Navbar = () => {
         <Link to="about" smooth={true} duration={500}>
           <OwnTypography>About</OwnTypography>
         </Link>
-        <Link to="work" smooth={true} duration={500}>
+        <Link to="work" smooth={true} duration={1000}>
           <Badge sx={{ marginLeft: "50px" }} badgeContent={1}>
             <OwnTypography>Work</OwnTypography>
           </Badge>
         </Link>
+        <Switch color="secondary" onChange={handleSwitchChange} />
       </Box>
     </Box>
   );

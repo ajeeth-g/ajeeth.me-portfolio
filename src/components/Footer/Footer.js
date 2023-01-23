@@ -51,13 +51,13 @@ const Footer = () => {
         <Typography
           sx={{ fontSize: "20px", marginBottom: "20px", cursor: "pointer " }}
         >
-          <Link to="about" smooth={true} duration="500ms">
+          <Link to="about" smooth={true} duration="1000ms">
             About
           </Link>
         </Typography>
 
         <Typography sx={{ fontSize: "20px", marginBottom: "20px" }}>
-          <Link to="work" smooth={true} duration="500ms">
+          <Link to="work" smooth={true} duration="800ms">
             <Badge sx={{ cursor: "pointer " }} badgeContent={1}>
               <Typography>Work</Typography>
             </Badge>

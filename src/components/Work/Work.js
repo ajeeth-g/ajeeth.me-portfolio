@@ -31,6 +31,7 @@ const Work = () => {
           alignItems: "center",
           width: 500,
           marginBottom: "50px",
+          color: "text.primary",
           // border: "2px solid red",
         }}
       >
@@ -51,15 +52,16 @@ const Work = () => {
           width: 860,
           alignItems: "flex-end",
           columnGap: 5,
+          color: "text.primary",
           // border: "2px solid blue",
         }}
       >
         <Link to="work" smooth={true} duration={500}>
-          <IconButton>
-            <Typography fontSize="20px" color="#000">
+          <IconButton color="text.primary">
+            <Typography fontSize="20px" color="text.primary">
               View my work{" "}
             </Typography>
-            <SouthIcon />
+            <SouthIcon color="text.secondary" />
           </IconButton>
         </Link>
 
@@ -78,8 +80,10 @@ const Work = () => {
             <Card
               sx={{
                 width: 400,
-                backgroundColor: "#F6F7F2",
+                background: "background.defult",
                 borderRadius: "20px",
+                color: "text.secondary",
+
                 // border: "2px dotted red",
               }}
             >
@@ -96,6 +100,7 @@ const Work = () => {
               <CardMedia
                 sx={{
                   padding: "20px",
+                  background: "background.defult",
                 }}
                 component="img"
                 height="657"
@@ -109,8 +114,10 @@ const Work = () => {
               sx={{
                 width: 400,
                 backgroundColor: "#F6F7F2",
+                borderRadius: "20px",
                 // border: "2px dotted red",
                 marginTop: "100px",
+                color: "text.secondary",
               }}
             >
               <CardHeader
@@ -141,7 +148,7 @@ const Work = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          background: "rgba(217, 217, 217, 0.5)",
+          background: "background.defult",
           marginTop: "80px",
           // border: "2px dotted red",
           height: 543,

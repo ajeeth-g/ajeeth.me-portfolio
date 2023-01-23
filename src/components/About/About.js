@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 const About = () => {
   const OwnPara = ({
     children,
-    color = "#000000",
+    color = "text.primary",
     fontSize = "25px",
     letterSpacing,
   }) => {
@@ -48,8 +48,8 @@ const About = () => {
               <span
                 key={idx}
                 style={{
-                  color: "#000",
                   textDecoration: "underline",
+                  color : "text.primary",
                   cursor: "pointer",
                 }}
                 onClick={handleCopy}
@@ -68,7 +68,7 @@ const About = () => {
   const OwnPara1 = styled(Typography)`
     font-size: 18px;
     padding-bottom: 40px;
-    color: #000000;
+    color: "text.primary";
 
     &:first-of-type {
       margin-top: 50px;
@@ -77,7 +77,7 @@ const About = () => {
 
   const Ownheading = ({
     children,
-    color = "#000000",
+    color = "text.primary",
     fontSize = "25px",
     letterSpacing = "0.2em",
   }) => {
@@ -98,7 +98,7 @@ const About = () => {
 
   const OwnSubHeading = ({
     children,
-    color = "#000000",
+    color = "text.primary",
     fontSize = "20px",
   }) => {
     return (
@@ -117,7 +117,7 @@ const About = () => {
 
   const OwnSubHeadingPara = ({
     children,
-    color = "#000000",
+    color = "text.primary",
     fontSize = "15px",
   }) => {
     return (
@@ -136,6 +136,7 @@ const About = () => {
   const IconBox = styled.div`
     display: flex;
     flex-direction: row;
+    color = "text.primary";
 
     svg {
       width: 50px;
@@ -150,6 +151,7 @@ const About = () => {
           display: "flex",
           alignItems: "center",
           marginBottom: "100px",
+          color: "text.primary",
         }}
       >
         {children}
@@ -312,7 +314,7 @@ const About = () => {
           </Box>
         </Box>
         <TextIcon>
-          Download my resume <DownloadIcon />{" "}
+          Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
         </TextIcon>
       </Box>
     </Box>

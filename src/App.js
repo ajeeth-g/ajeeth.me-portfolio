@@ -1,27 +1,44 @@
-import { Widget, addResponseMessage } from "react-chat-widget";
-import "react-chat-widget/lib/styles.css";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import logo from "./assets/Profile.JPG";
 import React, { useEffect, useState } from "react";
 import { Container } from "@mui/system";
 import About from "./components/About/About";
 import Navbar from "./components/Navbar/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import Work from "./components/Work/Work";
 import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
+import { amber } from "@mui/material/colors";
 
 const App = () => {
   const [theme, settheme] = useState("dark");
 
   const darkTheme = createTheme({
     palette: {
-      mood: theme,
-      background: {
-        default: "#F6F7F2",
+      mode: theme,
+      primary: {
+        ...amber,
+        ...(theme === "dark" && {
+          main: amber[300],
+        }),
       },
-      secondary: {
-        main: "#4F5358",
+      ...(theme === "dark" && {
+        background: {
+          default: "#F6F7F2",
+          paper: "#000",
+        },
+      }),
+      text: {
+        ...(theme === "light"
+          ? {
+              primary: "#000",
+              secondary: "#4F5358",
+            }
+          : {
+              primary: "#fff",
+              secondary: "#000",
+            }),
       },
     },
 
@@ -41,15 +58,6 @@ const App = () => {
     },
   });
 
-  useEffect(() => {
-    addResponseMessage("Welcome to this **awesome** chat!");
-  }, []);
-
-  const handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
-    // Now send the message throught the backend API
-  };
-
   return (
     <ThemeProvider theme={darkTheme}>
       <Box
@@ -58,24 +66,19 @@ const App = () => {
           flexDirection: "column",
           // border: "4px dashed  blue",
           flexWrap: "wrap",
+          bgcolor: "background.default",
+          color: "text.primary",
         }}
-        bgcolor={"background.default"}
-        color={"text.primary"}
       >
-        <Container component="container">
-          <Box className="App">
-            <Widget
-              handleNewUserMessage={handleNewUserMessage}
-              profileAvatar={logo}
-              title="Chat me"
-              subtitle="Ask whatever you think"
-            />
-          </Box>
-          <Navbar />
-          <About />
-          <Work />
-        </Container>
-        <Footer />
+        <Paper>
+          <Container component="container">
+            <MessengerCustomerChat pageId="884562478402337" appId="<APP_ID>" />
+            <Navbar settheme={settheme} />
+            <About />
+            <Work />
+          </Container>
+          <Footer />
+        </Paper>
       </Box>
     </ThemeProvider>
   );
