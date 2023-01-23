@@ -151,7 +151,6 @@ const Work = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          background: "background.defult",
           marginTop: "80px",
           // border: "2px dotted red",
           height: 543,
