@@ -226,7 +226,7 @@ const About = () => {
             knowledge in HTML, CSS, JavaScript, Bootstrap and React.
           </OwnPara1>
           <ImageListItem sx={{ width: 415, borderRadius: "200px" }}>
-            <img src={Profile_1} alt="" />
+            <img style={{ borderRadius: "20px" }} src={Profile_1} alt="" />
           </ImageListItem>
         </Box>
         <Box
@@ -239,7 +239,7 @@ const About = () => {
           }}
         >
           <ImageListItem sx={{ width: 415 }}>
-            <img src={Profile} alt="" />
+            <img style={{ borderRadius: "20px" }} src={Profile} alt="" />
           </ImageListItem>
           <OwnPara1>
             I am an avid learner, always looking for ways to expand my knowledge
