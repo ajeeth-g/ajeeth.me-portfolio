@@ -172,7 +172,7 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box width={{ xs: "585px", sm: "685px" }}>
+      <Box width={{ xs: "285px", sm: "685px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
@@ -266,7 +266,7 @@ const About = () => {
           <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
         </Box>
       </Box> */}
-      <Box>
+      {/* <Box>
         <Box
           Box
           sx={{
@@ -316,7 +316,7 @@ const About = () => {
         <TextIcon>
           Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
         </TextIcon>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
