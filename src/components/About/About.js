@@ -161,18 +161,18 @@ const About = () => {
 
   return (
     <Box
+      width={{ xs: "545px", sm: "860px" }}
       className="about"
       sx={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "860px",
         margin: "40px auto 0",
         // border: "4px solid black",
         flexWrap: "wrap",
       }}
     >
-      <Box width={{ xs: "285px", sm: "685px" }}>
+      <Box width={{ xs: "445px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
