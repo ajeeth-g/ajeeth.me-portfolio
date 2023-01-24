@@ -13,7 +13,7 @@ const About = () => {
   const OwnPara = ({
     children,
     color = "primary",
-    fontSize = "25px",
+    fontSize = "15px",
     letterSpacing,
   }) => {
     return (
@@ -172,7 +172,7 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box width={{ xs: "445px" }}>
+      <Box width={{ xs: "445px", sm: "860px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
