@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 const About = () => {
   const OwnPara = ({
     children,
-    color = "text.primary",
+    color = "primary",
     fontSize = "25px",
     letterSpacing,
   }) => {
@@ -161,7 +161,7 @@ const About = () => {
 
   return (
     <Box
-      width={{ xs: "545px", sm: "860px" }}
+      width={{ xs: "525px", sm: "860px" }}
       className="about"
       sx={{
         display: "flex",
