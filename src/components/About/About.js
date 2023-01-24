@@ -49,7 +49,7 @@ const About = () => {
                 key={idx}
                 style={{
                   textDecoration: "underline",
-                  color : "text.primary",
+                  color: "text.primary",
                   cursor: "pointer",
                 }}
                 onClick={handleCopy}
@@ -172,7 +172,7 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box sx={{ width: "685px" }}>
+      <Box width={{xs: "585px", sm : "685px"}} >
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
