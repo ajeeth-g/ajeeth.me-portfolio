@@ -172,7 +172,7 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box width={{xs: "585px", sm : "685px"}} >
+      <Box width={{ xs: "585px", sm: "685px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
@@ -196,7 +196,7 @@ const About = () => {
         <Ownemail component="p">Let’s talk me on hello@ajeeth.me </Ownemail>
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           // border: "6px solid blue ",
           width: "860px",
@@ -265,7 +265,7 @@ const About = () => {
           </OwnPara1>
           <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
         </Box>
-      </Box>
+      </Box> */}
       <Box>
         <Box
           Box

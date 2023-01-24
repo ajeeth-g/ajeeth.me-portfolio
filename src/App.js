@@ -79,7 +79,7 @@ const App = () => {
           <Container component="container">
             <Navbar settheme={settheme} />
             <About />
-            <Work />
+            {/* <Work /> */}
           </Container>
           {/* <Footer /> */}
         </Paper>
