@@ -1,20 +1,20 @@
-import { Badge, Box, Switch, Typography } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
+import { Badge, Box, Switch, Typography } from "@mui/material";
 import { Link } from "react-scroll";
+import {
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
 
 const Navbar = ({ settheme }) => {
-  const OwnTypography = ({ children }) => {
-    return (
-      <Typography style={{ fontSize: "20px", cursor: "pointer " }}>
-        {children}
-      </Typography>
-    );
-  };
-
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   const handleSwitchChange = () => {
-   settheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    settheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
-
   return (
     <Box
       color="primary"
@@ -25,30 +25,52 @@ const Navbar = ({ settheme }) => {
         flexWrap: "wrap",
         alignItems: "center",
         justifyContent: "space-between",
-        // border: "2px solid red"
       }}
     >
       <Box>
         <Link to="about" smooth={true} duration={500}>
-          <OwnTypography>ajeeth.me</OwnTypography>
+          <Typography style={{ fontSize: "20px", cursor: "pointer" }}>
+            ajeeth.me
+          </Typography>
         </Link>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-end",
-        }}
-      >
-        <Link to="about" smooth={true} duration={500}>
-          <OwnTypography>About</OwnTypography>
-        </Link>
-        <Link to="work" smooth={true} duration={1000}>
-          <Badge sx={{ marginLeft: "50px" }} badgeContent={1}>
-            <OwnTypography>Work</OwnTypography>
-          </Badge>
-        </Link>
-        <Switch color="secondary" onChange={handleSwitchChange} />
+      <Box>
+        <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
+          <MenuIcon />
+        </IconButton>
+        <Drawer
+          anchor="right"
+          open={isDrawerOpen}
+          onClose={() => setIsDrawerOpen(false)}
+        >
+          <List>
+            <ListItem button>
+              <ListItemText>
+                <Link to="about" smooth={true} duration={500}>
+                  <Typography style={{ fontSize: "20px", cursor: "pointer" }}>
+                    About
+                  </Typography>
+                </Link>
+              </ListItemText>
+            </ListItem>
+            <ListItem button>
+              <ListItemText>
+                <Link to="work" smooth={true} duration={1000}>
+                  <Badge badgeContent={1}>
+                    <Typography style={{ fontSize: "20px", cursor: "pointer" }}>
+                      Work
+                    </Typography>
+                  </Badge>
+                </Link>
+              </ListItemText>
+            </ListItem>
+            <ListItem button>
+              <ListItemText>
+                <Switch color="secondary" onChange={handleSwitchChange} />
+              </ListItemText>
+            </ListItem>
+          </List>
+        </Drawer>
       </Box>
     </Box>
   );
