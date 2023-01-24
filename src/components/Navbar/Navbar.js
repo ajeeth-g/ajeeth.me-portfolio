@@ -1,4 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import React from "react";
 import { Badge, Box, Switch, Typography } from "@mui/material";
 import { Link } from "react-scroll";
@@ -15,6 +16,8 @@ const Navbar = ({ settheme }) => {
   const handleSwitchChange = () => {
     settheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+
   return (
     <Box
       color="primary"
@@ -35,9 +38,26 @@ const Navbar = ({ settheme }) => {
         </Link>
       </Box>
       <Box>
-        <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
-          <MenuIcon />
-        </IconButton>
+        {isSmallScreen ? (
+          <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
+            <MenuIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Link to="about" smooth={true} duration={500}>
+              <Typography style={{ fontSize: "20px", cursor: "pointer" }}>
+                About
+              </Typography>
+            </Link>
+            <Link to="work" smooth={true} duration={1000}>
+              <Badge badgeContent={1}>
+                <Typography style={{ fontSize: "20px", cursor: "pointer" }}>
+                  Work
+                </Typography>
+              </Badge>
+            </Link>
+          </>
+        )}
         <Drawer
           anchor="right"
           open={isDrawerOpen}
@@ -75,5 +95,4 @@ const Navbar = ({ settheme }) => {
     </Box>
   );
 };
-
 export default Navbar;

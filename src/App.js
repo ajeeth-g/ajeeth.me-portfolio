@@ -81,7 +81,7 @@ const App = () => {
             {/* <About />
             <Work /> */}
           </Container>
-          <Footer />
+          {/* <Footer /> */}
         </Paper>
       </Box>
     </ThemeProvider>
