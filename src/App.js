@@ -78,8 +78,8 @@ const App = () => {
           /> */}
           <Container component="container">
             <Navbar settheme={settheme} />
-            {/* <About />
-            <Work /> */}
+            <About />
+            <Work />
           </Container>
           {/* <Footer /> */}
         </Paper>
