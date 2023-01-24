@@ -13,7 +13,7 @@ const About = () => {
   const OwnPara = ({
     children,
     color = "primary",
-    fontSize = "15px",
+    fontSize = "25px",
     letterSpacing,
   }) => {
     return (
@@ -161,7 +161,7 @@ const About = () => {
 
   return (
     <Box
-      width={{ xs: "525px", sm: "860px" }}
+      width={{ xs: "425px", sm: "860px" }}
       className="about"
       sx={{
         display: "flex",
@@ -172,7 +172,7 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box width={{ xs: "445px", sm: "860px" }}>
+      <Box width={{ xs: "245px", sm: "860px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
