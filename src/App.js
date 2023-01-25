@@ -66,7 +66,7 @@ const App = () => {
           <About />
           <Work />
         </Container>
-        {/* <Footer /> */}
+        <Footer />
       </Box>
     </ThemeProvider>
   );

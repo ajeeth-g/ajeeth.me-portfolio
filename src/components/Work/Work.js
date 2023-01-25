@@ -180,7 +180,7 @@ const Work = () => {
         <Box
           sx={{
             display: "flex",
-            // border: "2px dotted green",
+            // border: "4px dotted green",
             width: 943,
             height: "max-content",
 

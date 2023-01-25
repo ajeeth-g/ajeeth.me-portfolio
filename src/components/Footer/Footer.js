@@ -21,27 +21,40 @@ const Footer = () => {
         justifyContent: "space-around",
         alignItems: "center",
         height: "231px",
-        // border: "2px solid black",
+        // border: "4px solid red",
         background: "#222222",
         color: "#F8F8F8",
+        "@media (max-width: 768px)": {
+          width: "100%",
+          flexWrap: "wrap",
+          flexDirection: "column",
+        },
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "column", gap: "300" }}>
-        <Typography sx={{ fontSize: "25px", marginBottom: "40px" }}>
+        <Typography
+          sx={{ fontSize: { xs: "15px", sm: "25px" }, marginBottom: "40px" }}
+        >
           ajeeth.me
         </Typography>
-        <Typography sx={{ fontSize: "15px", marginBottom: "40px" }}>
+        <Typography
+          sx={{ fontSize: { xs: "10px", sm: "15px" }, marginBottom: "40px" }}
+        >
           Designed in Figma
         </Typography>
-        <Typography sx={{ fontSize: "15px" }}>
+        <Typography sx={{ fontSize: { xs: "10px", sm: "15px" } }}>
           Last updated in Jan 2023
         </Typography>
       </Box>
-      <Box sx={{ width: 450 }}>
-        <Typography sx={{ fontSize: "28px", marginBottom: "40px" }}>
+      <Box sx={{ width: 200 }}>
+        <Typography
+          sx={{ fontSize: { xs: "8px", sm: "28px" }, marginBottom: "40px" }}
+        >
           Let’s make something together
         </Typography>
-        <Typography sx={{ fontSize: "15px", fontWeight: "500" }}>
+        <Typography
+          sx={{ fontSize: { xs: "8px", sm: "15px" }, fontWeight: "500" }}
+        >
           I am a digital product designer specializing in web applications. Feel
           free to send me a message for possible collaborations, new
           connections, or projects. I should get back to you within 24 hours.
@@ -49,21 +62,29 @@ const Footer = () => {
       </Box>
       <Box>
         <Typography
-          sx={{ fontSize: "20px", marginBottom: "20px", cursor: "pointer " }}
+          sx={{
+            fontSize: { xs: "15px", sm: "20px" },
+            marginBottom: "20px",
+            cursor: "pointer ",
+          }}
         >
           <Link to="about" smooth={true} duration="1000ms">
             About
           </Link>
         </Typography>
 
-        <Typography sx={{ fontSize: "20px", marginBottom: "20px" }}>
+        <Typography
+          sx={{ fontSize: { xs: "15px", sm: "20px" }, marginBottom: "20px" }}
+        >
           <Link to="work" smooth={true} duration="800ms">
             <Badge sx={{ cursor: "pointer " }} badgeContent={1}>
               <Typography>Work</Typography>
             </Badge>
           </Link>
         </Typography>
-        <Typography sx={{ fontSize: "20px", cursor: "pointer" }}>
+        <Typography
+          sx={{ fontSize: { xs: "15px", sm: "20px" }, cursor: "pointer" }}
+        >
           <Link>
             <IconButton>
               <Typography onClick={handleClick} fontSize="20px" color="#F8F8F8">
