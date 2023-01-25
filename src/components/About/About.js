@@ -168,7 +168,7 @@ const About = () => {
         justifyContent: "center",
         width: "860px",
         margin: "40px auto 0",
-        border: "4px solid black",
+        // border: "4px solid black",
         flexWrap: "wrap",
         "@media (max-width: 768px)": {
           width: "100%",
@@ -303,7 +303,7 @@ const About = () => {
           <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
         </Box>
       </Box>
-      {/* <Box>
+      <Box>
         <Box
           Box
           sx={{
@@ -313,6 +313,12 @@ const About = () => {
             width: "max-content",
             gap: 28,
             marginTop: "70px",
+            "@media (max-width: 768px)": {
+              width: "100%",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 5,
+            },
           }}
         >
           <Box
@@ -333,6 +339,11 @@ const About = () => {
               // border: "2px solid red",
               display: "flex",
               flexDirection: "column",
+              "@media (max-width: 768px)": {
+                flexWrap: "wrap",
+                justifyContent: "center",
+                gap: 5,
+              },
             }}
           >
             <Ownheading>Skill set</Ownheading>
@@ -353,7 +364,7 @@ const About = () => {
         <TextIcon>
           Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
         </TextIcon>
-      </Box> */}
+      </Box>
     </Box>
   );
 };

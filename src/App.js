@@ -64,7 +64,7 @@ const App = () => {
         <Container>
           <Navbar settheme={setTheme} />
           <About />
-          {/* <Work /> */}
+          <Work />
         </Container>
         {/* <Footer /> */}
       </Box>

@@ -33,6 +33,10 @@ const Work = () => {
           marginBottom: "50px",
           color: "text.primary",
           // border: "2px solid red",
+          "@media (max-width: 768px)": {
+            width: "100%",
+            flexWrap: "wrap",
+          },
         }}
       >
         <Typography sx={{ fontSize: "22px" }} mb={4}>
@@ -54,6 +58,10 @@ const Work = () => {
           columnGap: 5,
           color: "text.primary",
           // border: "2px solid blue",
+          "@media (max-width: 768px)": {
+            width: "100%",
+            flexWrap: "wrap",
+          },
         }}
       >
         <Link to="work" smooth={true} duration={500}>
@@ -74,6 +82,10 @@ const Work = () => {
             columnGap: 5,
             marginTop: "100px",
             // border: "2px solid brown",
+            "@media (max-width: 768px)": {
+              width: "100%",
+              flexWrap: "wrap",
+            },
           }}
         >
           <Box>
@@ -121,7 +133,7 @@ const Work = () => {
                 "&:hover": {
                   boxShadow: (theme) => theme.shadows[4],
                 },
-               }}
+              }}
             >
               <CardHeader
                 title={
@@ -165,6 +177,10 @@ const Work = () => {
             height: "max-content",
 
             gap: 20,
+            "@media (max-width: 768px)": {
+              width: "100%",
+              flexWrap: "wrap",
+            },
           }}
         >
           <Box>
