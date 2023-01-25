@@ -205,7 +205,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          border: "6px solid blue ",
+          // border: "6px solid blue ",
           width: "860px",
           display: "flex",
           flexDirection: "row",
@@ -220,7 +220,7 @@ const About = () => {
       >
         <Box
           sx={{
-            border: "4px dotted red",
+            // border: "4px dotted red",
             width: "415px",
             height: "max-content",
             display: "flex",
