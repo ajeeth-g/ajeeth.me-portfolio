@@ -175,11 +175,11 @@ const Work = () => {
             // border: "2px dotted green",
             width: 943,
             height: "max-content",
-
             gap: 20,
             "@media (max-width: 768px)": {
               width: "100%",
               flexWrap: "wrap",
+              flexDirection: "column",
             },
           }}
         >
