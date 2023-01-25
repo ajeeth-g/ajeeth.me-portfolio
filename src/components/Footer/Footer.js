@@ -21,17 +21,20 @@ const Footer = () => {
         justifyContent: "space-around",
         alignItems: "center",
         height: "231px",
+        padding: "30px",
+        gap: 5,
         // border: "4px solid red",
         background: "#222222",
         color: "#F8F8F8",
         "@media (max-width: 768px)": {
           width: "100%",
           flexWrap: "wrap",
-          flexDirection: "column",
         },
       }}
     >
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "300" }}>
+      <Box
+        sx={{ display: "flex", flexDirection: "column", gap: "300", flex: 1 }}
+      >
         <Typography
           sx={{ fontSize: { xs: "15px", sm: "25px" }, marginBottom: "40px" }}
         >
@@ -46,7 +49,13 @@ const Footer = () => {
           Last updated in Jan 2023
         </Typography>
       </Box>
-      <Box sx={{ width: 200 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          flex: 2,
+        }}
+      >
         <Typography
           sx={{ fontSize: { xs: "8px", sm: "28px" }, marginBottom: "40px" }}
         >
@@ -66,6 +75,7 @@ const Footer = () => {
             fontSize: { xs: "15px", sm: "20px" },
             marginBottom: "20px",
             cursor: "pointer ",
+            flex: 1
           }}
         >
           <Link to="about" smooth={true} duration="1000ms">
