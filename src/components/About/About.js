@@ -171,15 +171,18 @@ const About = () => {
         justifyContent: "center",
         width: "860px",
         margin: "40px auto 0",
-        // border: "4px solid black",
+        border: "4px solid black",
         flexWrap: "wrap",
+        "@media (max-width: 768px)": {
+          width: "450px",
+        },
       }}
     >
       <Box
         sx={{
           width: "685px",
           "@media (max-width: 768px)": {
-            width: "100%",
+            width: "450px",
           },
         }}
       >
@@ -207,12 +210,16 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          // border: "6px solid blue ",
+          border: "6px solid blue ",
           width: "860px",
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
           columnGap: 4,
+          "@media (max-width: 768px)": {
+            width: "450px",
+            flexWrap: "wrap",
+          },
         }}
       >
         <Box
@@ -300,7 +307,7 @@ const About = () => {
             <OwnSubHeading>Component Engineer, VVDN</OwnSubHeading>
             <OwnSubHeadingPara>2020 — 2023 </OwnSubHeadingPara>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               // border: "2px solid red",
               display: "flex",
@@ -320,7 +327,7 @@ const About = () => {
               <JavascriptIcon />
               <FaReact />
             </IconBox>
-          </Box>
+          </Box> */}
         </Box>
         <TextIcon>
           Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
