@@ -98,6 +98,10 @@ const Work = () => {
                 "&:hover": {
                   boxShadow: (theme) => theme.shadows[4],
                 },
+                "@media (max-width: 768px)": {
+                  width: "100%",
+                  flexWrap: "wrap",
+                },
               }}
             >
               <CardHeader
@@ -132,6 +136,10 @@ const Work = () => {
                 marginTop: "100px",
                 "&:hover": {
                   boxShadow: (theme) => theme.shadows[4],
+                },
+                "@media (max-width: 768px)": {
+                  width: "100%",
+                  flexWrap: "wrap",
                 },
               }}
             >
@@ -175,11 +183,12 @@ const Work = () => {
             // border: "2px dotted green",
             width: 943,
             height: "max-content",
+
             gap: 20,
             "@media (max-width: 768px)": {
               width: "100%",
               flexWrap: "wrap",
-              flexDirection: "column",
+              gap: 5,
             },
           }}
         >
