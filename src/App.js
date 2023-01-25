@@ -21,7 +21,7 @@ const App = () => {
       }
     };
     checkTime();
-    const intervalId = setInterval(checkTime, 60000);
+    const intervalId = setInterval(checkTime, 600000);
     return () => clearInterval(intervalId);
   }, []);
   const darkTheme = createTheme({
@@ -43,7 +43,7 @@ const App = () => {
       fontWeightMedium: 500,
       fontWeightRegular: 700,
       fontWeightBold: 700,
-      subtitle1: {
+      h1: {
         fontSize: 15,
       },
     },

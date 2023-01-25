@@ -21,11 +21,8 @@ const About = () => {
         style={{
           paddingBottom: "40px",
           color: color,
-          fontSize: fontSize,
-          letterSpacing: letterSpacing,
-          "@media (max-width: 768px)": {
-            fontSize: "16px",
-          },
+          fontSize,
+          letterSpacing,
         }}
       >
         {children}
@@ -174,7 +171,8 @@ const About = () => {
         border: "4px solid black",
         flexWrap: "wrap",
         "@media (max-width: 768px)": {
-          width: "300px",
+          width: "100%",
+          flexWrap: "wrap",
         },
       }}
     >
@@ -182,31 +180,28 @@ const About = () => {
         sx={{
           width: "685px",
           "@media (max-width: 768px)": {
-            width: "300px",
+            width: "100%",
+            fontSize: "32px",
+            flexWrap: "wrap",
           },
         }}
       >
-        <OwnPara component="p">
+        <OwnPara>
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
         </OwnPara>
-        <OwnPara component="p">
+        <OwnPara>
           Currently working at VVDN Technologies as a componentgineer, helping
           to design the electrical board (PCB).
         </OwnPara>
-        <OwnPara
-          color="#4F5358"
-          fontSize="18px"
-          component="p"
-          letterSpacing="0.15em"
-        >
+        <OwnPara color="#4F5358" fontSize="18px" letterSpacing="0.15em">
           I’m an PCB designer with over 2 years of experience in designing a
           printed circuit board. I'm an innovative and dedicated design
           professional dedicated to satisfying my customer’s design
           requirements. I enjoy the challenge of finding unique ways to fulfill
           my customer’s needs.
         </OwnPara>
-        <Ownemail component="p">Let’s talk me on hello@ajeeth.me </Ownemail>
+        <Ownemail>Let’s talk me on hello@ajeeth.me </Ownemail>
       </Box>
       <Box
         sx={{
@@ -216,22 +211,23 @@ const About = () => {
           flexDirection: "row",
           flexWrap: "wrap",
           columnGap: 4,
+          flexWrap: "wrap",
           "@media (max-width: 768px)": {
-            width: "300px",
+            width: "285px",
             flexWrap: "wrap",
           },
         }}
       >
         <Box
           sx={{
-            // border: "4px dotted red",
+            border: "4px dotted red",
             width: "415px",
             height: "max-content",
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
             "@media (max-width: 768px)": {
-              width: "300px",
+              width: "285px",
               flexWrap: "wrap",
             },
           }}
@@ -245,7 +241,16 @@ const About = () => {
             I have been teaching myself coding and have gained a good amount of
             knowledge in HTML, CSS, JavaScript, Bootstrap and React.
           </OwnPara1>
-          <ImageListItem sx={{ width: 415, borderRadius: "200px" }}>
+          <ImageListItem
+            sx={{
+              width: 415,
+              borderRadius: "200px",
+              "@media (max-width: 768px)": {
+                width: "100%",
+                flexWrap: "wrap",
+              },
+            }}
+          >
             <img style={{ borderRadius: "20px" }} src={Profile_1} alt="" />
           </ImageListItem>
         </Box>
@@ -257,12 +262,20 @@ const About = () => {
             flexWrap: "wrap",
             width: "400px",
             "@media (max-width: 768px)": {
-              width: "300px",
+              width: "285px",
               flexWrap: "wrap",
             },
           }}
         >
-          <ImageListItem sx={{ width: 415 }}>
+          <ImageListItem
+            sx={{
+              width: 415,
+              "@media (max-width: 768px)": {
+                width: "285px",
+                flexWrap: "wrap",
+              },
+            }}
+          >
             <img style={{ borderRadius: "20px" }} src={Profile} alt="" />
           </ImageListItem>
           <OwnPara1>
@@ -290,7 +303,7 @@ const About = () => {
           <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
         </Box>
       </Box>
-      <Box>
+      {/* <Box>
         <Box
           Box
           sx={{
@@ -315,7 +328,7 @@ const About = () => {
             <OwnSubHeading>Component Engineer, VVDN</OwnSubHeading>
             <OwnSubHeadingPara>2020 — 2023 </OwnSubHeadingPara>
           </Box>
-          {/* <Box
+          <Box
             sx={{
               // border: "2px solid red",
               display: "flex",
@@ -335,12 +348,12 @@ const About = () => {
               <JavascriptIcon />
               <FaReact />
             </IconBox>
-          </Box> */}
+          </Box>
         </Box>
         <TextIcon>
           Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
         </TextIcon>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
