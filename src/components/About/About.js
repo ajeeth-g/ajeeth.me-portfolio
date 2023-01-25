@@ -213,7 +213,7 @@ const About = () => {
           columnGap: 4,
           flexWrap: "wrap",
           "@media (max-width: 768px)": {
-            width: "285px",
+            width: "100%",
             flexWrap: "wrap",
           },
         }}
@@ -227,7 +227,7 @@ const About = () => {
             flexDirection: "row",
             flexWrap: "wrap",
             "@media (max-width: 768px)": {
-              width: "285px",
+              width: "100%",
               flexWrap: "wrap",
             },
           }}
@@ -262,7 +262,7 @@ const About = () => {
             flexWrap: "wrap",
             width: "400px",
             "@media (max-width: 768px)": {
-              width: "285px",
+              width: "100%",
               flexWrap: "wrap",
             },
           }}
@@ -271,7 +271,7 @@ const About = () => {
             sx={{
               width: 415,
               "@media (max-width: 768px)": {
-                width: "285px",
+                width: "100%",
                 flexWrap: "wrap",
               },
             }}
