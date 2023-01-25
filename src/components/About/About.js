@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 const About = () => {
   const OwnPara = ({
     children,
-    color = "primary",
+    color = "text.primary",
     fontSize = "25px",
     letterSpacing,
   }) => {
@@ -161,18 +161,18 @@ const About = () => {
 
   return (
     <Box
-      width={{ xs: "425px", sm: "860px" }}
       className="about"
       sx={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        width: "860px",
         margin: "40px auto 0",
         // border: "4px solid black",
         flexWrap: "wrap",
       }}
     >
-      <Box width={{ xs: "245px", sm: "860px" }}>
+      <Box sx={{ width: "685px" }}>
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer
@@ -195,8 +195,7 @@ const About = () => {
         </OwnPara>
         <Ownemail component="p">Let’s talk me on hello@ajeeth.me </Ownemail>
       </Box>
-
-      {/* <Box
+      <Box
         sx={{
           // border: "6px solid blue ",
           width: "860px",
@@ -265,8 +264,8 @@ const About = () => {
           </OwnPara1>
           <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
         </Box>
-      </Box> */}
-      {/* <Box>
+      </Box>
+      <Box>
         <Box
           Box
           sx={{
@@ -316,7 +315,7 @@ const About = () => {
         <TextIcon>
           Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
         </TextIcon>
-      </Box> */}
+      </Box>
     </Box>
   );
 };
