@@ -23,6 +23,9 @@ const About = () => {
           color: color,
           fontSize: fontSize,
           letterSpacing: letterSpacing,
+          "@media (max-width: 768px)": {
+            fontSize: "16px",
+          },
         }}
       >
         {children}
@@ -172,7 +175,14 @@ const About = () => {
         flexWrap: "wrap",
       }}
     >
-      <Box sx={{ width: "685px" }}>
+      <Box
+        sx={{
+          width: "685px",
+          "@media (max-width: 768px)": {
+            width: "100%",
+          },
+        }}
+      >
         <OwnPara component="p">
           👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
           web developer

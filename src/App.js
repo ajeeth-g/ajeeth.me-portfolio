@@ -61,9 +61,9 @@ const App = () => {
           color: "text.primary",
         }}
       >
-        <Container component="container">
-          <Navbar  settheme={ setTheme } />
-          {/* <About /> */}
+        <Container>
+          <Navbar settheme={setTheme} />
+          <About />
           {/* <Work /> */}
         </Container>
         {/* <Footer /> */}
