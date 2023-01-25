@@ -174,7 +174,7 @@ const About = () => {
         border: "4px solid black",
         flexWrap: "wrap",
         "@media (max-width: 768px)": {
-          width: "450px",
+          width: "300px",
         },
       }}
     >
@@ -182,7 +182,7 @@ const About = () => {
         sx={{
           width: "685px",
           "@media (max-width: 768px)": {
-            width: "450px",
+            width: "300px",
           },
         }}
       >
@@ -217,7 +217,7 @@ const About = () => {
           flexWrap: "wrap",
           columnGap: 4,
           "@media (max-width: 768px)": {
-            width: "450px",
+            width: "300px",
             flexWrap: "wrap",
           },
         }}
@@ -230,6 +230,10 @@ const About = () => {
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
+            "@media (max-width: 768px)": {
+              width: "300px",
+              flexWrap: "wrap",
+            },
           }}
         >
           <OwnPara1>
@@ -252,6 +256,10 @@ const About = () => {
             flexDirection: "row",
             flexWrap: "wrap",
             width: "400px",
+            "@media (max-width: 768px)": {
+              width: "300px",
+              flexWrap: "wrap",
+            },
           }}
         >
           <ImageListItem sx={{ width: 415 }}>
