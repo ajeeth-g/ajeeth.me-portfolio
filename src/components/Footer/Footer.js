@@ -69,7 +69,7 @@ const Footer = () => {
           flexWrap: "wrap",
           height: "max-content",
           top: "40px",
-          width: { xs: "200px", sm: "600px" },
+          width: { xs: "150px", sm: "600px" },
         }}
       >
         <Typography
@@ -117,11 +117,7 @@ const Footer = () => {
           sx={{ fontSize: { xs: "15px", sm: "20px" }, cursor: "pointer" }}
         >
           <Link>
-            <Typography
-              onClick={handleClick}
-              sx={{ fontSize: { xs: "15px", sm: "20px" } }}
-              color="#F8F8F8"
-            >
+            <Typography onClick={handleClick} color="#F8F8F8">
               Contact
             </Typography>
           </Link>
