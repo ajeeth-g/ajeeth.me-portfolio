@@ -17,7 +17,6 @@ const Footer = () => {
     <Box
       sx={{
         display: "flex",
-        position: "relative",
         justifyContent: "space-around",
         padding: { xs: "20px", sm: "30px" },
         flexWrap: "wrap",
@@ -38,6 +37,7 @@ const Footer = () => {
           position: "relative",
           top: "40px",
           width: { xs: "70px", sm: "150px" },
+          height: "max-content",
         }}
       >
         <Typography
@@ -66,7 +66,7 @@ const Footer = () => {
           flexDirection: "column",
           position: "relative",
           flexWrap: "wrap",
-
+          height: "max-content",
           top: "40px",
           width: { xs: "150px", sm: "600px" },
         }}
@@ -77,7 +77,7 @@ const Footer = () => {
             marginBottom: { xs: "15px", sm: "40px" },
           }}
         >
-          hello@ajeeth.me Let’s make something together
+          Let’s make something together
         </Typography>
         <Typography
           sx={{ fontSize: { xs: "8px", sm: "15px" }, fontWeight: "500" }}
@@ -87,7 +87,7 @@ const Footer = () => {
           connections, or projects. I should get back to you within 24 hours.
         </Typography>
       </Box>
-      <Box sx={{ position: "relative", top: "40px" }}>
+      <Box sx={{ position: "relative", top: "40px", height: "max-content", }}>
         <Typography
           sx={{
             fontSize: { xs: "15px", sm: "20px" },
