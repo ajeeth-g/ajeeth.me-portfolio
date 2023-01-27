@@ -74,7 +74,7 @@ const Footer = () => {
       >
         <Typography
           sx={{
-            fontSize: { xs: "9px", sm: "35px" },
+            fontSize: { xs: "14px", sm: "35px" },
             marginBottom: { xs: "15px", sm: "40px" },
           }}
         >
