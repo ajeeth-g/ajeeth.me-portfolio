@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
-import { Badge, Box, IconButton, Typography } from "@mui/material";
+import { Badge, Box, IconButton, makeStyles, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -21,8 +21,8 @@ const Footer = () => {
         justifyContent: "space-around",
         alignItems: "center",
         height: "231px",
-        padding: "30px",
-        gap: 5,
+        padding: { xs: "2px", sm: "30px" },
+        flexWrap: "wrap",
         // border: "4px solid red",
         background: "#222222",
         color: "#F8F8F8",
@@ -33,15 +33,25 @@ const Footer = () => {
       }}
     >
       <Box
-        sx={{ display: "flex", flexDirection: "column", gap: "300", flex: 1 }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: { xs: "70px", sm: "150px" },
+        }}
       >
         <Typography
-          sx={{ fontSize: { xs: "15px", sm: "25px" }, marginBottom: "40px" }}
+          sx={{
+            fontSize: { xs: "15px", sm: "25px" },
+            marginBottom: { xs: "15px", sm: "40px" },
+          }}
         >
           ajeeth.me
         </Typography>
         <Typography
-          sx={{ fontSize: { xs: "10px", sm: "15px" }, marginBottom: "40px" }}
+          sx={{
+            fontSize: { xs: "10px", sm: "15px" },
+            marginBottom: { xs: "15px", sm: "40px" },
+          }}
         >
           Designed in Figma
         </Typography>
@@ -53,11 +63,14 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          flex: 2,
+          width: { xs: "100px", sm: "600px" },
         }}
       >
         <Typography
-          sx={{ fontSize: { xs: "8px", sm: "28px" }, marginBottom: "40px" }}
+          sx={{
+            fontSize: { xs: "9px", sm: "35px" },
+            marginBottom: { xs: "15px", sm: "40px" },
+          }}
         >
           Let’s make something together
         </Typography>
@@ -73,9 +86,8 @@ const Footer = () => {
         <Typography
           sx={{
             fontSize: { xs: "15px", sm: "20px" },
-            marginBottom: "20px",
+            marginBottom: { xs: "8px", sm: "20px" },
             cursor: "pointer ",
-            flex: 1
           }}
         >
           <Link to="about" smooth={true} duration="1000ms">
@@ -84,7 +96,7 @@ const Footer = () => {
         </Typography>
 
         <Typography
-          sx={{ fontSize: { xs: "15px", sm: "20px" }, marginBottom: "20px" }}
+          sx={{ fontSize: { xs: "15px", sm: "20px" }, marginBottom: { xs: "8px", sm: "20px" }, }}
         >
           <Link to="work" smooth={true} duration="800ms">
             <Badge sx={{ cursor: "pointer " }} badgeContent={1}>
