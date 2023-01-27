@@ -249,7 +249,7 @@ const About = () => {
               "@media (max-width: 768px)": {
                 width: "100%",
                 flexWrap: "wrap",
-                order: 0,
+                order: 4,
               },
             }}
           >
