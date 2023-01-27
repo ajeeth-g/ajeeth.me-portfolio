@@ -1,6 +1,5 @@
 import { useState } from "react";
-import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
-import { Badge, Box, IconButton, makeStyles, Typography } from "@mui/material";
+import { Badge, Box, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -67,7 +66,7 @@ const Footer = () => {
           flexDirection: "column",
           position: "relative",
           flexWrap: "wrap",
-          height: "max-content",
+
           top: "40px",
           width: { xs: "150px", sm: "600px" },
         }}
@@ -78,7 +77,7 @@ const Footer = () => {
             marginBottom: { xs: "15px", sm: "40px" },
           }}
         >
-          Let’s make something together
+          hello@ajeeth.me Let’s make something together
         </Typography>
         <Typography
           sx={{ fontSize: { xs: "8px", sm: "15px" }, fontWeight: "500" }}
@@ -115,12 +114,10 @@ const Footer = () => {
         </Typography>
         <Typography
           sx={{ fontSize: { xs: "15px", sm: "20px" }, cursor: "pointer" }}
+          onClick={handleClick}
+          color="#F8F8F8"
         >
-          <Link>
-            <Typography onClick={handleClick} color="#F8F8F8">
-              Contact
-            </Typography>
-          </Link>
+          <Link>Contact</Link>
         </Typography>
       </Box>
     </Box>
