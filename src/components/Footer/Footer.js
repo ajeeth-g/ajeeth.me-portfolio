@@ -18,11 +18,11 @@ const Footer = () => {
     <Box
       sx={{
         display: "flex",
+        position: "relative",
         justifyContent: "space-around",
-        alignItems: "center",
-        height: "231px",
-        padding: { xs: "2px", sm: "30px" },
+        padding: { xs: "20px", sm: "30px" },
         flexWrap: "wrap",
+        height: "250px",
         // border: "4px solid red",
         background: "#222222",
         color: "#F8F8F8",
@@ -36,6 +36,8 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          position: "relative",
+          top: "40px",
           width: { xs: "70px", sm: "150px" },
         }}
       >
@@ -63,7 +65,11 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          width: { xs: "100px", sm: "600px" },
+          position: "relative",
+          flexWrap: "wrap",
+          height: "max-content",
+          top: "40px",
+          width: { xs: "200px", sm: "600px" },
         }}
       >
         <Typography
@@ -82,7 +88,7 @@ const Footer = () => {
           connections, or projects. I should get back to you within 24 hours.
         </Typography>
       </Box>
-      <Box>
+      <Box sx={{ position: "relative", top: "40px" }}>
         <Typography
           sx={{
             fontSize: { xs: "15px", sm: "20px" },
@@ -96,7 +102,10 @@ const Footer = () => {
         </Typography>
 
         <Typography
-          sx={{ fontSize: { xs: "15px", sm: "20px" }, marginBottom: { xs: "8px", sm: "20px" }, }}
+          sx={{
+            fontSize: { xs: "15px", sm: "20px" },
+            marginBottom: { xs: "8px", sm: "20px" },
+          }}
         >
           <Link to="work" smooth={true} duration="800ms">
             <Badge sx={{ cursor: "pointer " }} badgeContent={1}>
@@ -108,19 +117,13 @@ const Footer = () => {
           sx={{ fontSize: { xs: "15px", sm: "20px" }, cursor: "pointer" }}
         >
           <Link>
-            <IconButton>
-              <Typography onClick={handleClick} fontSize="20px" color="#F8F8F8">
-                Contact
-              </Typography>
-              <ContentCopyOutlinedIcon
-                onClick={handleClick}
-                sx={{
-                  color: "rgba(255, 255, 255, 0.5)",
-                  fontSize: "15px",
-                  margin: "0 0 20px 5px",
-                }}
-              />
-            </IconButton>
+            <Typography
+              onClick={handleClick}
+              sx={{ fontSize: { xs: "15px", sm: "20px" } }}
+              color="#F8F8F8"
+            >
+              Contact
+            </Typography>
           </Link>
         </Typography>
       </Box>
