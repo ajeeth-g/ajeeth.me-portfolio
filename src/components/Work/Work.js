@@ -183,11 +183,11 @@ const Work = () => {
             display: "flex",
             // border: "4px dotted green",
             width: 943,
-            height: "max-content",
 
             gap: 20,
             "@media (max-width: 768px)": {
               width: "100%",
+              height: "max-content",
               flexWrap: "wrap",
               gap: 5,
             },

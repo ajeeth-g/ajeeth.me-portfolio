@@ -220,7 +220,6 @@ const About = () => {
       >
         <Box
           sx={{
-            // border: "4px dotted red",
             width: "415px",
             height: "max-content",
             display: "flex",
@@ -228,16 +227,17 @@ const About = () => {
             flexWrap: "wrap",
             "@media (max-width: 768px)": {
               width: "100%",
+              flexDirection: "column",
               flexWrap: "wrap",
             },
           }}
         >
-          <OwnPara1>
+          <OwnPara1 sx={{ order: 1 }}>
             I am a mechanical engineer by profession, but I have always had a
             passion for coding. As such, I have decided to switch my career path
             and become a frontend developer.
           </OwnPara1>
-          <OwnPara1>
+          <OwnPara1 sx={{ order: 1 }}>
             I have been teaching myself coding and have gained a good amount of
             knowledge in HTML, CSS, JavaScript, Bootstrap and React.
           </OwnPara1>
@@ -245,15 +245,18 @@ const About = () => {
             sx={{
               width: 415,
               borderRadius: "200px",
+              order: 2,
               "@media (max-width: 768px)": {
                 width: "100%",
                 flexWrap: "wrap",
+                order: 0,
               },
             }}
           >
             <img style={{ borderRadius: "20px" }} src={Profile_1} alt="" />
           </ImageListItem>
         </Box>
+
         <Box
           sx={{
             // border: "2px dotted red",
