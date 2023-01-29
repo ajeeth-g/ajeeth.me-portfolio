@@ -191,7 +191,7 @@ const About = () => {
           web developer
         </OwnPara>
         <OwnPara>
-          Currently working at VVDN Technologies as a componentgineer, helping
+          Currently working at VVDN Technologies as a component egineer, helping
           to design the electrical board (PCB).
         </OwnPara>
         <OwnPara color="#4F5358" fontSize="18px" letterSpacing="0.15em">
