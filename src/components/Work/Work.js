@@ -147,7 +147,7 @@ const Work = () => {
               <CardHeader
                 title={
                   <Typography variant="subtitle1">
-                    #01 - Product Design
+                    #02 - Product Design
                   </Typography>
                 }
                 subheader={
