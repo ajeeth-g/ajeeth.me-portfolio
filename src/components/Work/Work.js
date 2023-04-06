@@ -151,7 +151,7 @@ const Work = () => {
                   </Typography>
                 }
                 subheader={
-                  <Typography variant="h5">Upcoming Project</Typography>
+                  <Typography variant="h5">Upcoming Projectf</Typography>
                 }
               />
               <CardMedia
