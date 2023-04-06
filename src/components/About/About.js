@@ -43,7 +43,7 @@ const About = () => {
     return (
       <Typography style={{ fontSize: "16px", paddingBottom: "50px" }}>
         {children.split(" ").map((word, idx) => {
-          if (word === "hello@ajeeth.me") {
+          if (word === "ajeetheswari14@gmail.com") {
             return (
               <span
                 key={idx}
@@ -201,7 +201,7 @@ const About = () => {
           requirements. I enjoy the challenge of finding unique ways to fulfill
           my customer’s needs.
         </OwnPara>
-        <Ownemail>Let’s talk me on hello@ajeeth.me </Ownemail>
+        <Ownemail>Let’s talk me on ajeetheswari14@gmail.com </Ownemail>
       </Box>
       <Box
         sx={{
@@ -303,7 +303,7 @@ const About = () => {
             is constantly looking for ways to improve my skills and challenge
             myself. I have the right
           </OwnPara1>
-          <Ownemail>Let’s talk me on hello@ajeeth.me</Ownemail>
+          <Ownemail>Let’s talk me on ajeetheswari14@gmail.com</Ownemail>
         </Box>
       </Box>
       <Box>
