@@ -147,11 +147,11 @@ const Work = () => {
               <CardHeader
                 title={
                   <Typography variant="subtitle1">
-                    #01 - Product Design
+                    #02 - Product Design
                   </Typography>
                 }
                 subheader={
-                  <Typography variant="h5">Upcoming Project</Typography>
+                  <Typography variant="h5">Upcoming Projectf</Typography>
                 }
               />
               <CardMedia

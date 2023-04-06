@@ -191,7 +191,7 @@ const About = () => {
           web developer
         </OwnPara>
         <OwnPara>
-          Currently working at VVDN Technologies as a component egineer, helping
+          Currently working at VVDN Technologies as a component engineer, helping
           to design the electrical board (PCB).
         </OwnPara>
         <OwnPara color="#4F5358" fontSize="18px" letterSpacing="0.15em">
@@ -364,9 +364,6 @@ const About = () => {
             </IconBox>
           </Box>
         </Box>
-        <TextIcon>
-          Download my resume <DownloadIcon sx={{ cursor: "pointer" }} />{" "}
-        </TextIcon>
       </Box>
     </Box>
   );
