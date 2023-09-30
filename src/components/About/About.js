@@ -187,7 +187,7 @@ const About = () => {
         }}
       >
         <OwnPara>
-          👋 Hello, I’m Ajeeth. <br /> Looking for an internship in Front-end or
+          👋 Hello, I’m Ajeethhh. <br /> Looking for an internship in Front-end or
           web developer
         </OwnPara>
         <OwnPara>
